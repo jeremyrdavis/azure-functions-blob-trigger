@@ -11,7 +11,6 @@ This is a Quarkus implementation of this Java example https://github.com/azure-s
 At the moment compilation fails with:
 
 ```
-```shell script
  ERROR [io.qua.dep.dev.IsolatedDevModeMain] (main) Failed to start quarkus: java.lang.RuntimeException: io.quarkus.builder.BuildException: Build failure: Build failed due to errors
 Press [e[error]: Build step io.quarkus.azure.functions.deployment.AzureFunctionsProcessor#findFunctions threw an exception: jakarta.enterprise.inject.spi.DeploymentException: java.lang.ClassNotFoundException: [B
         at io.quarkus.azure.functions.deployment.AzureFunctionsProcessor.lambda$findFunctions$1(AzureFunctionsProcessor.java:218)
@@ -128,8 +127,6 @@ Caused by: java.lang.ClassNotFoundException: [B
         at io.quarkus.azure.functions.deployment.AzureFunctionsProcessor.lambda$findFunctions$1(AzureFunctionsProcessor.java:216)
         ... 20 more
 ```shell script
-./mvnw compile quarkus:dev
-```
 
 > **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
 
